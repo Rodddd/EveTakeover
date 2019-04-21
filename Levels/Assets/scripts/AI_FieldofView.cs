@@ -10,24 +10,24 @@ public class AI_FieldofView : MonoBehaviour {
     public float viewDistance = 10f;
     private bool isAware = false;
     private NavMeshAgent agent;
-    private Renderer renderer;
+    private Renderer render;
 
     public void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        renderer = GetComponent<Renderer>();
+        render = GetComponent<Renderer>();
     }
     public void Update()
     {
        if (isAware)
         {
             agent.SetDestination(fpsc.transform.position);
-            renderer.material.color = Color.red;
+            render.material.color = Color.red;
         }
        else
         {
             SearchForPlayer();
-            renderer.material.color = Color.blue;
+            render.material.color = Color.blue;
         }
     }
 
