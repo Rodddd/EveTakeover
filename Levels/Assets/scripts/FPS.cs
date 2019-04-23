@@ -11,7 +11,7 @@ public class FPS : MonoBehaviour {
     public float sens;
     CharacterController player;
     CapsuleCollider Bod;
-    SphereCollider Footsteps;
+    //SphereCollider Footsteps;
 
     private float grav = 100.0f;
 
@@ -26,7 +26,7 @@ public class FPS : MonoBehaviour {
     {
 		player = GetComponent<CharacterController>();
         Bod = GetComponent<CapsuleCollider>();
-        Footsteps = GetComponent<SphereCollider>();
+        //Footsteps = GetComponent<SphereCollider>();
 	}
 	
 	// Update is called once per frame
@@ -40,12 +40,12 @@ public class FPS : MonoBehaviour {
             {
                 moveFB = Input.GetAxis("Vertical") * spntspd;
                 moveRL = Input.GetAxis("Horizontal") * spntspd;
-                Footsteps.radius = 3.0f;
+                //Footsteps.radius = 3.0f;
             }
-            else
-            {
-                Footsteps.radius = 1.0f;
-            }
+            //else
+            //{
+            //    Footsteps.radius = 1.0f;
+            //}
             if (Input.GetKey(KeyCode.LeftControl))
             {
                 moveFB = Input.GetAxis("Vertical") * crhspd;
