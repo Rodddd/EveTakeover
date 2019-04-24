@@ -65,6 +65,7 @@
     <Compile Include="Assets\scripts\AI_TriggerAware.cs" />
     <Compile Include="Assets\scripts\CameraSwitch.cs" />
     <Compile Include="Assets\scripts\Death.cs" />
+    <Compile Include="Assets\scripts\DoorOpen.cs" />
     <Compile Include="Assets\scripts\Footsteps.cs" />
     <Compile Include="Assets\scripts\FPS.cs" />
     <Compile Include="Assets\scripts\GoodOlSwicheruu.cs" />
